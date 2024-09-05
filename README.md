@@ -31,7 +31,7 @@ Currently, the following destination observability outputs are published:
 
 | Destination | Description | README |
 |--|--|--|
-| output_splunk_hec | Outputs JSON formatted logs to the Splunk HTTP Event Collector interface | [README](./logstash-configs/output_splunk_hec/) |
+| output_azure_init | Outputs JSON formatted logs to Azure Analytics Workspace | [README](./logstash-configs/output_azure_init/) |
 
   
 If modifying the Logstash configurations, it is recommended to modify only the "output" section as the inputs will be continuously updated to maintain compatibility with Aviatrix logs. 
