@@ -51,6 +51,10 @@ variable "logstash_output_config_path" {
   default     = "../../logstash_configs/output_splunk_hec"
 }
 
+variable "docker_path" {
+  description = "Path to docker image file"
+  default     = "../docker images"
+}
 variable "logstash_output_config_name" {
   description = "Name of logstash config file"
   default     = "logstash_output.conf"

@@ -1,2 +1,4 @@
 # DOCKER RUN FOR SPLUNK HEC OUTPUT
-sudo docker run -d --restart=always -v /logstash/pipeline/:/usr/share/logstash/pipeline/ -v /logstash/patterns:/usr/share/logstash/patterns -e XPACK_MONITORING_ENABLED=false -p 5000:5000 docker.elastic.co/logstash/logstash:8.8.2
+# sudo docker run -d --restart=always -v /logstash/pipeline/:/usr/share/logstash/pipeline/ -v /logstash/patterns:/usr/share/logstash/patterns -e XPACK_MONITORING_ENABLED=false -p 5000:5000 docker.elastic.co/logstash/logstash:8.8.2
+
+sudo docker run -d --restart=always -e XPACK_MONITORING_ENABLED=false -p 5000:5000 logstash

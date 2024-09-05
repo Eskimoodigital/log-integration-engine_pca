@@ -61,6 +61,13 @@ resource "aws_s3_object" "base_pattern_config" {
   tags   = var.tags
 }
 
+resource "aws_s3_object" "docker_file" {
+  bucket = aws_s3_bucket.default.id
+  key    = "dockerfile"
+  source = "${var.docker_path}/dockerfile"
+  etag   = md5(file("${var.docker_path}/dockerfile"))
+  tags   = var.tags
+}
 resource "aws_s3_access_point" "default" {
   name   = "avx-log-integration-config"
   bucket = aws_s3_bucket.default.id
