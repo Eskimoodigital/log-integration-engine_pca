@@ -13,7 +13,7 @@
 
 provider "aws" {
   region = var.aws_region # Specify your preferred AWS region
-  profile = "SubAccountAdmin-535708457972"
+  profile = "SubAccountAdmin-xxx"
 }
 
 
