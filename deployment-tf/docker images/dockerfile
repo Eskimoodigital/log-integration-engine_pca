@@ -3,4 +3,4 @@ RUN rm -f /usr/share/logstash/pipeline/logstash.conf
 RUN bin/logstash-plugin install microsoft-sentinel-log-analytics-logstash-output-plugin
 WORKDIR ./logstash
 COPY /pipeline/ /usr/share/logstash/pipeline/
-COPY /patterns/ /usr/share/logstash/config/
+COPY /patterns/ /usr/share/logstash/patterns/
